@@ -28,14 +28,6 @@ export const fetchNotes = async (page: number, search: string) => {
     headers: { Authorization: `Bearer ${myKey}` },
   });
 
-  // const res = await axios.get<FetchNotesResponse>("/notes", {
-  //   params: {
-  //     page,
-  //     search,
-  //   },
-  //   headers: { Authorization: `Bearer ${myKey}` },
-  // });
-
   return res.data;
 };
 
